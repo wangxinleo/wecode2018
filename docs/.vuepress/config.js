@@ -18,11 +18,11 @@ module.exports = {
   },
   themeConfig: {
     logo: '/img/logo.png',
-    nav: [
-      { text: '主页', link: '/' },
-      { text: '概述', link: '/summary/' },
-      { text: 'Github', link: 'https://google.com', target: '_blank' },
-    ],
+    // nav: [
+    //   { text: '主页', link: '/' },
+    //   { text: '概述', link: '/summary/' },
+    //   { text: 'Github', link: 'https://google.com', target: '_blank' },
+    // ],
     locales: {
       '/': {
         selectText: '选择语言',
@@ -37,27 +37,28 @@ module.exports = {
         },
         nav: [
           { text: '主页', link: '/' },
-          { text: 'BPM系统', link: '/summary/' },
+          { text: 'BPM系统', link: '/BPM/' },
           { text: 'Github', link: 'https://google.com', target: '_blank' },
         ],
         sidebar: {
-          '/summary/': [
+          '/BPM/': [
             {
               title: '概述',
               // false 为默认展开
               collapsable: false,
               children: [
-                { title: '概述', path: '/summary/' },
-                { title: '项目简介', path: '/guide/project' },
+                { title: 'Lotus Notes/Domino 概述', path: '/BPM/' },
+                { title: '项目结构', path: '/BPM/directoryStructure' },
+                { title: '项目集成', path: '/BPM/projectList' },
               ],
             },
             {
-              title: '深入',
+              title: 'H3 BPM',
               // false 为默认展开
               collapsable: false,
               children: [
-                { title: '概述', path: '/summary/' },
-                { title: '项目简介', path: '/guide/project' },
+                { title: '概述', path: '/BPM/H3/' },
+                { title: '项目结构', path: '/BPM/H3/directoryStructure' },
               ],
             },
           ],

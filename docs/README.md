@@ -4,10 +4,10 @@ heroImage: /img/logo.png
 heroText: OA-DevHelpDoc
 tagline: BPM系统开发帮助文档
 actionText: 查看详情 →
-actionLink: /guide/
+actionLink: /BPM/
 features:
   - title: 兼容Trident及V8引擎
-    details: 以兼容 IE8 为中心的JavaScript代码实例，以ES4.1为主，配合ES6新特性开发。
+    details: 以兼容 IE8 为中心的JavaScript代码实例，以ES3为主，配合ES6新特性开发。
   - title: 两年开发实例驱动
     details: 兼顾解决IE浏览器和Chrome浏览器部分代码不兼容的问题,两年代码实例沉淀，代码段快速定位。
   - title: 成熟开发框架开箱即用
