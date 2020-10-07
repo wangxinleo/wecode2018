@@ -29,7 +29,7 @@ module.exports = {
         label: '简体中文',
         editLinkText: '在 GitHub 上编辑此页',
         lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-        displayAllHeaders: true, // 侧边栏子项展开
+        // displayAllHeaders: true, // 侧边栏子项展开
         serviceWorker: {
           updatePopup: {
             message: '发现新内容可用.',
@@ -50,7 +50,21 @@ module.exports = {
               children: [
                 { title: 'Lotus Notes/Domino 概述', path: '/BPM/' },
                 { title: '项目结构', path: '/BPM/directoryStructure' },
-                { title: '项目集成', path: '/BPM/projectList', collapsable: true },
+              ],
+            },
+            {
+              title: '项目集成',
+              // false 为默认展开
+              collapsable: false,
+              children: [
+                {
+                  title: '固定资产设备信息管理池',
+                  path: '/BPM/ProjectList/fixedAssetsManagement',
+                },
+                {
+                  title: '首页重构',
+                  path: '/BPM/ProjectList/homeReconstruction',
+                },
               ],
             },
             {
