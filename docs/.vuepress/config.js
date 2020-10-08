@@ -65,6 +65,10 @@ module.exports = {
                   title: '首页重构',
                   path: '/BPM/ProjectList/homeReconstruction',
                 },
+                {
+                  title: 'OASS',
+                  path: '/BPM/ProjectList/externalSupport',
+                },
               ],
             },
             {

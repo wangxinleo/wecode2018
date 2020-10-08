@@ -34,7 +34,7 @@ Lotus Notes/Domino 也提供基于本平台的子项目开发，运用许多现�
 
 **统计分析难**
 
-- 开设第三方辅助平台 [OAMS](https://www.baidu.com)
+- 开设第三方辅助平台 [OASS](https://www.baidu.com)
 
 **不支持移动办公**
 
