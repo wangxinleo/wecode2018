@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /img/logo.png
-heroText: OA-DevHelpDoc
+heroText: OA-DEVHELPDOC
 tagline: BPM系统开发帮助文档
 actionText: 查看详情 →
 actionLink: /BPM/

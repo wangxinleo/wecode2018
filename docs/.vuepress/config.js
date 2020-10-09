@@ -1,18 +1,18 @@
 module.exports = {
   base: '/',
-  title: 'OA-DevHelpDoc',
+  title: 'OA-DEVHELPDOC',
   description: '五株科技BPM开发帮助文档',
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-      title: 'OA-DevHelpDoc',
+      title: 'OA-DEVHELPDOC',
       description: '五株科技BPM开发帮助文档',
     },
     '/en/': {
       lang: 'en-US',
-      title: 'OA-DevHelpDoc',
+      title: 'OA-DEVHELPDOC',
       description: 'WuZhu Technology BPM Development Assistance Documents',
     },
   },
@@ -38,37 +38,27 @@ module.exports = {
         },
         nav: [
           { text: '主页', link: '/' },
-          { text: 'BPM系统', link: '/BPM/' },
-          { text: 'Github', link: 'https://google.com', target: '_blank' },
+          { text: '概述', link: '/BPM/' },
+          { text: '代码速查', link: '/codePath/' },
+          { text: '项目集成', link: '/expand/' },
+          { text: '首页改版', link: '/changeIndex/' },
+          { text: '了解更多', link: '/more/' },
+          {
+            text: 'Github',
+            link: 'https://github.com/wangxinleo',
+            target: '_blank',
+          },
         ],
         sidebar: {
           '/BPM/': [
             {
-              title: '概述',
+              title: 'Lotus Notes Domino BPM',
               // false 为默认展开
               collapsable: false,
               children: [
-                { title: 'Lotus Notes/Domino 概述', path: '/BPM/' },
-                { title: '项目结构', path: '/BPM/directoryStructure' },
-              ],
-            },
-            {
-              title: '项目集成',
-              // false 为默认展开
-              collapsable: false,
-              children: [
-                {
-                  title: '固定资产设备信息管理池',
-                  path: '/BPM/ProjectList/fixedAssetsManagement',
-                },
-                {
-                  title: '首页重构',
-                  path: '/BPM/ProjectList/homeReconstruction',
-                },
-                {
-                  title: 'OASS',
-                  path: '/BPM/ProjectList/externalSupport',
-                },
+                { title: '概述', path: '/BPM/' },
+                { title: '应用开发', path: '/BPM/directoryStructure' },
+                { title: '调试方法', path: '/BPM/debug' },
               ],
             },
             {
@@ -81,7 +71,37 @@ module.exports = {
               ],
             },
           ],
-          '/nested/': [''],
+          '/expand/': [
+            {
+              title: '项目集成',
+              // false 为默认展开
+              collapsable: false,
+              children: [
+                {
+                  title: '办公自动化支持系统 OASS',
+                  path: '/expand/',
+                },
+                {
+                  title: '固定资产设备信息管理池',
+                  path: '/expand/fixedAssetsManagement',
+                },
+              ],
+            },
+          ],
+          '/changeIndex/': [
+            {
+              title: '首页改版',
+              // false 为默认展开
+              displayAllHeaders: true, // 侧边栏子项展开
+              collapsable: false,
+              children: [
+                {
+                  title: '介绍',
+                  path: '/changeIndex/',
+                },
+              ],
+            },
+          ],
         },
       },
       '/en/': {
@@ -98,7 +118,11 @@ module.exports = {
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Guide', link: '/en/guide/' },
-          { text: 'Github', link: 'https://google.com', target: '_blank' },
+          {
+            text: 'Github',
+            link: 'https://github.com/wangxinleo',
+            target: '_blank',
+          },
         ],
         // 当前 locale 的 algolia docsearch 选项
         // algolia: {},

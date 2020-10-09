@@ -23,8 +23,8 @@
 
 ## 第三方模块
 
-- bootstrap.js
-- bootstrap-table.js
+- [bootstrap.js](https://github.com/twbs/bootstrap)
+- [bootstrap-table.js](https://github.com/wenzhixin/bootstrap-table)
 
 ## 成果预览
 

@@ -1,4 +1,4 @@
-# 首页重构
+# 首页改版
 
 ## 项目简介
 
@@ -24,7 +24,7 @@
 
 ## 第三方模块
 
-- bootstrap.js
+- [bootstrap.js](https://github.com/twbs/bootstrap)
 
 ## 成果预览
 
